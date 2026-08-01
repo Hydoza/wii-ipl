@@ -1,5 +1,5 @@
-#ifndef IPL_APSS_SCAN_THREAD_H
-#define IPL_APSS_SCAN_THREAD_H
+#ifndef IPL_AP_SCAN_THREAD_H
+#define IPL_AP_SCAN_THREAD_H
 
 #include <egg/core.h>
 
@@ -29,4 +29,4 @@ namespace ipl {
     }  // namespace scene
 }  // namespace ipl
 
-#endif  // IPL_APSS_SCAN_THREAD_H
+#endif  // IPL_AP_SCAN_THREAD_H
