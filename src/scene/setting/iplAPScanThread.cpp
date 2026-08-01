@@ -10,14 +10,14 @@ namespace ipl {
         }
 
         void* APScanThread::Run() {
-            s32 result = WDScanOnce(this->mpScanBuffer, 2048, &this->mScanParam);
+            s32 result = WDScanOnce(mpScanBuffer, 2048, &mScanParam);
             if (result != 0) {
                 OSReport("ERROR(%d): UpdateScanInfo\n", result);
             }
         }
 
         void APScanThread::setResultData(unsigned short* buffer) {
-            this->mpScanBuffer = (u8*)buffer;
+            mpScanBuffer = (u8*)buffer;
             setParam();
         }
 
